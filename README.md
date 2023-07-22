@@ -17,16 +17,41 @@ This puzzle game is dedicated in honor of my mother, Jacqueline K. Howell-Robins
 With gratitude and love, I dedicate "Puzzle Me Pink" to the memory of "Jackie".
 
 ### Executive Summary <a name="summary"></a>
-some text
+This project is a full-stack application depicting an online gaming website for crossword puzzles (other types of puzzles to be included later). This application will allow you to play a game by yourself or with other people (in 1v1 and 2v2 modes), customize your profile and settings, and view the local leaderboards.
 
 ### User Stories <a name="user-stories"></a>
-some text
+#### Core Functionalities:
+- A website guest can:
+    - [ ] view the home page
+    - [ ] view the about section
+    - [ ] register for a new account
+    - [ ] ask questions to site admin via contact form
+
+- A registered user can:
+    - [ ] log into website
+    - [ ] view and edit profile
+    - [ ] change settings for personal preferences
+    - [ ] play a solo game
+    - [ ] play a multiplayer game
+    - [ ] view the leaderboard
+
+#### Stretch Goals
+- A registered user can:
+    - [ ] spin for a prize of one random avatar picture for their profile avatar
+    - [ ] enter a chatroom with their opponent during match
+    - [ ] add and remove friends from friends list
+    - [ ] invite friends from list to a private tournament
 
 ### Techincal Requirements <a name="tech-reqs"></a>
-some text
+- Java 11
+- PostgreSQL
+- Spring Boot
+- Angular
+- JUnit
+- Mockito
 
 ### Flowcharts <a name="charts"></a>
-some text
+TBA
 
 ### Sources Used <a name="resources"></a>
-some text
+TBA
