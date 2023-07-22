@@ -6,7 +6,8 @@
 4. [User Stories](#user-stories)
 5. [Techincal Requirements](#tech-reqs)
 6. [Flowcharts](#charts)
-7. [Sources Used](#resources)
+7. [Startup](#startup)
+7. [Continue Reading](#resources)
 
 ### Overview <a name="overview"></a>
 Unleash your brain's brilliance with this web application! Immerse yourself in a kaleidoscope of captivating crossword puzzles, riddles, and brain teasers with your online friends that will paint your world with excitement and adventure. Prepare to be tickled pink as you embark on an unforgettable journey of mind-bending fun!
@@ -30,7 +31,7 @@ This project is a full-stack application depicting an online gaming website for 
 - A registered user can:
     - [ ] log into website
     - [ ] view and edit profile
-    - [ ] change settings for personal preferences
+    - [ ] change settings to personal preferences
     - [ ] play a solo game
     - [ ] play a multiplayer game
     - [ ] view the leaderboard
@@ -53,5 +54,8 @@ This project is a full-stack application depicting an online gaming website for 
 ### Flowcharts <a name="charts"></a>
 TBA
 
-### Sources Used <a name="resources"></a>
+### Startup <a name="startup"></a>
 TBA
+
+### Continue Reading <a name="resources"></a>
+To learn more about the author of Puzzle Me Pink, please check out this [link](https://www.linkedin.com/in/azhyaknox/).
