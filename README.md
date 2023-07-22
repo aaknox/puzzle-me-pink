@@ -1,6 +1,4 @@
 # Puzzle Me Pink!
-<br>
-
 ## Table of contents
 1. [Overview](#overview)
 2. [About Puzzle Me Pink](#about)
