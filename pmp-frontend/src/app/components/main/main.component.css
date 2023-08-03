@@ -1,0 +1,46 @@
+.my-container {
+    display: grid;
+    min-height: 80%;
+    align-items: flex-start;
+    background-color: transparent !important;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.title {
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    transform: scaleY(1.5) scaleX(1.5) rotate(-4deg);
+    position: relative;
+    right: 10rem;
+    top: 40px;
+}
+
+.create-btn {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#bubbleContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* display: none; */
+}
+
+.bubble {
+    position: fixed;
+    background-color: #ffffff;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+    background: rgb(255,255,255) !important;
+    background: linear-gradient(315deg, rgba(255,255,255,1) 20%, rgba(238,201,219,1) 60%, rgba(245,61,131,1) 100%) !important;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Fredoka', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
