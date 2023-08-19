@@ -340,4 +340,5 @@ build/
 
 ### VS Code ###
 .vscode/
-pmp-backend/logs/
+pmp-backend/logs/**
+pmp-backend/logs/log.txt
