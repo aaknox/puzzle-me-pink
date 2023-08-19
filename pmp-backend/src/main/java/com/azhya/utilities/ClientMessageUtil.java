@@ -14,4 +14,6 @@ public class ClientMessageUtil {
 	public static final ClientMessage UPDATE_FAILED = new ClientMessage("Something went wrong during update.");
 	public static final ClientMessage DELETION_SUCCESSFUL = new ClientMessage("Deletion was successful!");
 	public static final ClientMessage DELETION_FAILED = new ClientMessage("Something went wrong during deletion.");
+	public static final ClientMessage VERIFICATION_SUCCESSFUL = new ClientMessage("Verification was successful!");
+	public static final ClientMessage VERIFICATION_FAILED = new ClientMessage("Something went wrong while verifying the player's email.");
 }

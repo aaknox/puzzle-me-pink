@@ -1,0 +1,39 @@
+<mjml>
+  <mj-head>
+    <mj-title>Puzzle Me Pink | Profile Verified!</mj-title>
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap"></mj-font>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"></mj-font>
+    <mj-font name="Pacifico" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Pacifico&display=swap"></mj-font>
+    <mj-style>
+      .top{
+        font-family: "Inter", sans-serif;
+      }
+
+      .top:nth-child(2){
+        text-align: left !important;
+      }
+
+      .bottom{
+        font-weight: 500;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-container background-color="#fff" width="720">
+      <mj-section background-color="#F53D83" padding="24">
+        <mj-column>
+          <!-- <mj-text align="center" color="#fff" font-family="Pacifico" font-size="23" font-weight="600" letter-spacing="12">Pink!</mj-text> -->
+          <mj-text align="center" color="#fff" font-family="Pacifico" font-size="23" font-weight="600" letter-spacing="12">
+            <span class="top">Puzzle Me</span>
+            <span class="bottom">Pink</span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#fff" padding-top="42px">
+      <mj-column>
+        <mj-text font-family="Inter" line-height="21px" color="#718096">Hi {{ username }},</mj-text>
+        <mj-text font-family="Inter" line-height="21px" color="#718096">Congratulations! Your email address is now verified in our system. Have fun!</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

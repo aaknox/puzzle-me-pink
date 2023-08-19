@@ -1,6 +1,7 @@
 .my-container {
     display: grid;
     min-height: 80%;
+    width: 100vw;
     align-items: flex-start;
     background-color: transparent !important;
     text-align: center;
@@ -11,11 +12,16 @@
     font-weight: 500;
     color: white;
     letter-spacing: 2px;
-    font-size: 4rem;
-    transform: scaleY(1.5) scaleX(1.5) rotate(-4deg);
+    font-size: 4.5rem;
+    transform: scaleY(1.5) scaleX(1.5);
     position: relative;
-    right: 10rem;
-    top: 40px;
+    /* right: 22rem;
+    top: 40px; */
+}
+
+.greeting{
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .create-btn {
@@ -43,4 +49,41 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
+}
+
+.fancy {
+    font-family: "Pacifico", sans-serif;
+    /*           x   y   blur color */
+    text-shadow: 2px 1px 0px #ff0000;
+    text-align: center;
+    margin: 0 auto;
+    transform: scaleY(1.5) scaleX(1.5) rotate(-4deg);
+}
+
+.floating {
+	animation: floating 6s ease-in-out infinite
+}
+
+@keyframes floating {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(-8px); }
+	100% { transform: translateY(0);}
+}
+
+.create-btn{
+    background-color: #d62e6e;
+    border: 2px solid transparent;
+    position: fixed;
+    bottom: 30px;
+}
+
+.ribbon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: .35;
+    transform: scaleY(1.5) scaleX(1.5) rotate(4deg);
 }

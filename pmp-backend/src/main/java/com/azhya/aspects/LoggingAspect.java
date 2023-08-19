@@ -20,58 +20,17 @@ private static Logger log = Logger.getLogger(LoggingAspect.class);
 	public void logBefore(JoinPoint joinPoint) {
 		log.info(String.format("Before advice for: [ %s : %s ]", 
 				joinPoint.getTarget().getClass().getName(), joinPoint.getSignature().getName()));
+		
+		Object[] args = joinPoint.getArgs();
+		for(Object arg: args) {
+			log.info("Argument: " + arg);
+		}
 	}
 	
 	@After(value="execution(* com.azhya.*.*.*(..))")
 	public void logAfter(JoinPoint joinPoint) {
 		log.info(String.format("After advice for: [ %s : %s ]", 
 				joinPoint.getTarget().getClass().getName(), joinPoint.getSignature().getName()));
-	}
-	
-	@Around(value="execution(* com.azhya.services.*.*(..))")
-	public Object logDuringService(ProceedingJoinPoint joinPoint) {
-		//1. get the arguments returned from the dao layer call that came into the service layer (aka our list)
-		Object[] args = joinPoint.getArgs();
-		
-		//2. provide a log message for this advice
-		log.info(String.format("Around advice for: [ %s : %s ]", joinPoint.getTarget().getClass().getName(), joinPoint.getSignature().getName()));
-		
-		//3. proceed the program flow in this joinPoint's owner method by using the proceed()
-		Object result = null;
-		
-		try {
-			result = joinPoint.proceed(args);
-			log.info(String.format("Results of this method invoking/proceeding is: %s", result));
-		} catch (Throwable e) {
-			log.warn(String.format("Unable to execute around advice: %s", e.getMessage()));
-		}
-		
-		//4. end the advice by returning the found results from proceeding
-		log.info("End of Around Advice");
-		return result;
-	}
-	
-	@Around(value="execution(* com.azhya.repositories.*.*(..))")
-	public Object logDuringRepo(ProceedingJoinPoint joinPoint) {
-		//1. get the arguments returned from the dao layer call that came into the service layer (aka our list)
-		Object[] args = joinPoint.getArgs();
-		
-		//2. provide a log message for this advice
-		log.info(String.format("Around advice for: [ %s : %s ]", joinPoint.getTarget().getClass().getName(), joinPoint.getSignature().getName()));
-		
-		//3. proceed the program flow in this joinPoint's owner method by using the proceed()
-		Object result = null;
-		
-		try {
-			result = joinPoint.proceed(args);
-			log.info(String.format("Results of this method invoking/proceeding is: %s", result));
-		} catch (Throwable e) {
-			log.warn(String.format("Unable to execute around advice: %s", e.getMessage()));
-		}
-		
-		//4. end the advice by returning the found results from proceeding
-		log.info("End of Around Advice");
-		return result;
 	}
 
 }

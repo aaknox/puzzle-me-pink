@@ -1,0 +1,59 @@
+<mjml>
+  <mj-head>
+    <mj-title>Profile Creation - Confirmed</mj-title>
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap"></mj-font>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"></mj-font>
+    <mj-font name="Pacifico" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Pacifico&display=swap"></mj-font>
+    <mj-style>
+      .top{
+        font-family: "Inter", sans-serif;
+      }
+
+      .top:nth-child(2){
+        text-align: left !important;
+      }
+
+      .bottom{
+        font-weight: 500;
+      }
+    </mj-style>
+    
+  </mj-head>
+
+  <mj-body>
+    <mj-container background-color="#fff" width="720">
+      <mj-section background-color="#F53D83" padding="24">
+        <mj-column>
+          <!-- <mj-text align="center" color="#fff" font-family="Pacifico" font-size="23" font-weight="600" letter-spacing="12">Pink!</mj-text> -->
+          <mj-text align="center" color="#fff" font-family="Pacifico" font-size="23" font-weight="600" letter-spacing="12">
+            <span class="top">Puzzle Me</span>
+            <span class="bottom">Pink</span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#fff" padding-top="42px">
+        <mj-column>
+          <mj-text font-family="Inter" font-size="21" color="#101C39">
+            Welcome {{ username }}! Your profile is almost complete...
+          </mj-text>
+          <mj-text font-family="Inter" line-height="21px" color="#718096">
+            Greetings Brave Player!
+          </mj-text>
+          <mj-text font-family="Inter" line-height="21px" color="#718096">
+            Thank you for registering with Puzzle Me Pink. Please verify your email address (<b>{{ email }}</b>) by clicking the button below:
+          </mj-text>
+          <mj-button font-family="Inter" font-weight="600" align="left" background-color="#F53D83" color="#fff" href="{{ url }}">
+            Verify email
+          </mj-button>
+          <mj-text font-family="Inter" font-size="12" line-height="18px" color="#aab2bd">
+            If you are not able to click the button, just copy this link: {{ url }}
+          </mj-text>
+          <mj-divider border-width="2" border-color="#ebeef2"></mj-divider>
+          <mj-text font-family="Inter" line-height="21px" color="#718096" align="center">
+            Sent by <b>Azhya Knox</b>. Visit <a href="https://github.com/aaknox/puzzle-me-pink">GitHub</a> for more information about this project!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>
