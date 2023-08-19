@@ -44,9 +44,12 @@ This project is a full-stack application depicting an online gaming website for 
     - [ ] invite friends from list to a private tournament
 
 ### Techincal Requirements <a name="tech-reqs"></a>
-- Java 11
+- Java
 - PostgreSQL
 - Spring Boot
+- Spring Security
+- Spring Mail & MJML Responsive Email Framework 
+- BCrypt
 - Angular
 - JUnit
 - Mockito
