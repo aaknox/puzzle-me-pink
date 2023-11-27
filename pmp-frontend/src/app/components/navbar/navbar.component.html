@@ -6,7 +6,7 @@
       <a href="https://www.linkedin.com/in/azhyaknox/" target="_blank">
         <img src="../../../assets/images/dev-logo-2.PNG" alt="Check out my LinkedIn page" title="Check out my LinkedIn page" class="logo">
       </a>
-      <button
+      <!-- <button
         class="navbar-toggler toggler-example menu-toggle-btn"
         type="button"
         data-toggle="collapse"
@@ -14,10 +14,29 @@
         aria-controls="navbarSupportedContent1"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        (click)="isCollapsed = !isCollapsed" 
+        (click)="isCollapsed = !isCollapsed"
         [attr.aria-expanded]="!isCollapsed"
         >
         <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
+      </button> -->
+
+      <button class="menuIcon navbar-toggler toggler-example menu-toggle-btn" 
+        (click)="menuClick()" 
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="!isCollapsed"
+      >
+        <svg class="hamburger" width="26.892" height="17.285" viewBox="0 0 26.892 17.285">
+          <g id="MenuI" data-name="Group 1" transform="translate(0 1.5)">
+            <line id="topLine" class="dark-blue-text" data-name="Line 1" x2="26.892" fill="none" stroke="#000" stroke-width="3"/>
+            <line id="midLine" class="dark-blue-text" data-name="Line 1" x2="26.892" transform="translate(0 7.142)" fill="none" stroke="#000" stroke-width="3"/>
+            <line id="botLine" class="dark-blue-text" data-name="Line 1" x2="26.892" transform="translate(0 14.285)" fill="none" stroke="#000" stroke-width="3"/>
+          </g>
+        </svg>
       </button>
   
       <!-- Collapsible content -->
@@ -42,10 +61,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="https://mail.google.com/mail/?view=cm&fs=1&to=azhya.knox@revature.com&su=DBZ%20API%20Website%20Inquiry" title="Email Azhya Knox" target="_blank">Contact Us</a>
-          </li>
-          <li class="nav-item close-menu-btn" (click)="closeMenuEvent()" [attr.aria-expanded]="!isCollapsed">
-              <a class="nav-link text-white close-label">Close Menu</a>
-              <a class="nav-link text-white"><i class="far fa-times-circle"></i></a>
           </li>
         </ul>
         <!-- Links -->

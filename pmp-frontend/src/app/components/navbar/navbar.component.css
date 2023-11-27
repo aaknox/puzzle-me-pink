@@ -22,6 +22,10 @@
     left: 0;
     border-right: 5px solid whitesmoke;
   }
+
+  #navbarSupportedContent1 > ul > li.nav-item.active > a{
+    font-family: 'Roboto', sans-serif;
+  }
   
   .menu-options-div li:not(:last-child){
     width: 80%;
